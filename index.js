@@ -73,7 +73,7 @@ async function run() {
       console.log(toy);
       const result = await toyCollection.insertOne(toy);
       res.send(result);
-    });
+    })
 
     app.get("/mytoys/:email", async (req, res) => {
       const result = await toyCollection
