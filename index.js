@@ -45,7 +45,7 @@ async function run() {
       })
       .toArray();
     res.send(result);
-  });
+  })
 
 
     app.get("/toys", async (req, res) => {
